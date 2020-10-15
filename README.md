@@ -2,7 +2,7 @@
 
 FastAPI with Django ORM
 
-## Folder hierachy
+## Folder hierarchy
 
 ```bash
 $ tree -L 3 -I '__pycache__|venv|staticfiles' -P '*.py'
@@ -37,7 +37,7 @@ $ tree -L 3 -I '__pycache__|venv|staticfiles' -P '*.py'
 - `models`: Django ORMs
 - `routers`: FastAPI routers
 - `schemas`: Pydantic models
-- `adapters`: Converting Django ORM instance to Pydantic models
+- `adapters`: Converting Django ORMs to Pydantic models
 
 ## Run
 

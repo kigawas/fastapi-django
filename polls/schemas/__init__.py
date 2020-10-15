@@ -1,22 +1,30 @@
 from datetime import datetime
 from typing import List
 
-from pydantic import BaseModel
+from django.db import models
+from pydantic import BaseModel as _BaseModel
 
-from polls.models import Question
+
+class BaseModel(_BaseModel):
+    @classmethod
+    def from_model(cls, instance: models.Model):
+        kwargs = {}
+        for k, v in cls.__fields__.items():
+            instance_attr = getattr(instance, k)
+            if isinstance(instance_attr, models.Model):
+                instance_attr = v.type_.from_model(instance_attr)
+            kwargs[k] = instance_attr
+
+        return cls(**kwargs)
+
+    @classmethod
+    def from_models(cls, instances: List[models.Model]):
+        return [cls.from_model(inst) for inst in instances]
 
 
 class FastQuestion(BaseModel):
     question_text: str
     pub_date: datetime
-
-    @classmethod
-    def from_model(cls, instance: Question):
-        return cls(
-            id=instance.id,
-            question_text=instance.question_text,
-            pub_date=instance.pub_date,
-        )
 
 
 class FastQuestions(BaseModel):
@@ -24,4 +32,17 @@ class FastQuestions(BaseModel):
 
     @classmethod
     def from_qs(cls, qs):
-        return cls(items=[FastQuestion.from_model(i) for i in qs])
+        return cls(items=FastQuestion.from_models(qs))
+
+
+class FastChoice(BaseModel):
+    question: FastQuestion
+    choice_text: str
+
+
+class FastChoices(BaseModel):
+    items: List[FastChoice]
+
+    @classmethod
+    def from_qs(cls, qs):
+        return cls(items=FastChoice.from_models(qs))
