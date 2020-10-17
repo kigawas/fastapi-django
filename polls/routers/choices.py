@@ -20,4 +20,4 @@ def get_choices(
 
 @router.get("/{c_id}")
 def get_choice(choice: Choice = Depends(adapters.retrieve_choice)) -> FastChoice:
-    return FastChoice.from_model(choice)
+    return FastChoice.from_orm(choice)

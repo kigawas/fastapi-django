@@ -22,4 +22,4 @@ def get_questions(
 def get_question(
     question: Question = Depends(adapters.retrieve_question),
 ) -> FastQuestion:
-    return FastQuestion.from_model(question)
+    return FastQuestion.from_orm(question)
