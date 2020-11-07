@@ -2,9 +2,9 @@
 
 FastAPI with Django ORM
 
-More details are on my [blog](https://kigawas.me/posts/integrate-fastapi-and-django-orm/).
+More details are [here](https://kigawas.me/posts/integrate-fastapi-and-django-orm/).
 
-## Folder hierarchy
+## Directory hierarchy
 
 ```bash
 $ tree -L 3 -I '__pycache__|venv|staticfiles' -P '*.py'
