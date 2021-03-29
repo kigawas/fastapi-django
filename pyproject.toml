@@ -1,15 +1,18 @@
 [tool.poetry]
 name = "fastapi-django"
-description = "fastapi and django integration"
-authors = ["Weiliang Li <to.be.impressive@gmail.com>"]
 version = "0.1.0"
+# doc
+authors = ["Weiliang Li <to.be.impressive@gmail.com>"]
+description = "fastapi and django integration"
 license = "MIT"
 
 [tool.poetry.dependencies]
+python = "^3.8"
+
+# 3rd party
 django = "^3.1"
 fastapi = "^0.61.0"
 pydantic = "^1.6.1"
-python = "^3.8"
 uvicorn = "^0.11.8"
 whitenoise = "^5.2.0"
 
@@ -21,5 +24,9 @@ ipython = "^7.18.0"
 mypy = "^0.790"
 
 [build-system]
-requires = ["poetry-core>=1.0.0"]
 build-backend = "poetry.core.masonry.api"
+requires = ["poetry-core>=1.0.0"]
+
+[tool.isort]
+multi_line_output = 3
+profile = "black"

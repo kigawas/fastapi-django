@@ -1,12 +1,10 @@
 from typing import List
 
-from fastapi import APIRouter
-from fastapi import Depends
+from fastapi import APIRouter, Depends
 
 from polls import adapters
 from polls.models import Question
-from polls.schemas import FastQuestion
-from polls.schemas import FastQuestions
+from polls.schemas import FastQuestion, FastQuestions
 
 router = APIRouter()
 

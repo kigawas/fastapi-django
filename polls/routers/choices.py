@@ -1,12 +1,10 @@
 from typing import List
 
-from fastapi import APIRouter
-from fastapi import Depends
+from fastapi import APIRouter, Depends
 
 from polls import adapters
 from polls.models import Choice
-from polls.schemas import FastChoice
-from polls.schemas import FastChoices
+from polls.schemas import FastChoice, FastChoices
 
 router = APIRouter()
 

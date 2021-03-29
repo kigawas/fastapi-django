@@ -15,8 +15,8 @@ os.environ.setdefault("DJANGO_SETTINGS_MODULE", "mysite.settings")
 application = get_asgi_application()
 
 from fastapi import FastAPI
-from polls.routers import choices_router
-from polls.routers import questions_router
+
+from polls.routers import choices_router, questions_router
 
 fastapp = FastAPI()
 fastapp.include_router(questions_router, tags=["questions"], prefix="/question")
