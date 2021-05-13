@@ -1,13 +1,9 @@
-from typing import Type
-from typing import TypeVar
+from typing import Type, TypeVar
 
 from django.db import models
-from fastapi import HTTPException
-from fastapi import Path
+from fastapi import HTTPException, Path
 
-from polls.models import Choice
-from polls.models import Question
-
+from polls.models import Choice, Question
 
 ModelT = TypeVar("ModelT", bound=models.Model)
 
