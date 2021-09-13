@@ -83,6 +83,16 @@ $ curl http://localhost:8000/question/
 {"items":[{"question_text":"What's new?","pub_date":"2021-03-29T04:18:54.724432+00:00"}]}%
 ```
 
+### Mount Django asgi application
+
+```python
+# in mysite/settings.py
+
+MOUNT_DJANGO_APP = True
+```
+
+Then http://localhost:8000/django/admin
+
 ## Tools
 
 ### FastAPI doc
