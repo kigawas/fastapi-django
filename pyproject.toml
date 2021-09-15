@@ -10,7 +10,8 @@ license = "MIT"
 python = "^3.8"
 
 # 3rd party
-django = "^3.1"
+aiofiles = "^0.7.0"
+django = "^3.2"
 fastapi = "^0.61.0"
 pydantic = "^1.6.1"
 uvicorn = "^0.11.8"
@@ -21,7 +22,7 @@ black = "^20.8b0"
 django-stubs = {git = "https://github.com/typeddjango/django-stubs.git"}
 flake8 = "^3.8.3"
 ipython = "^7.18.0"
-mypy = "^0.900"
+mypy = "^0.910"
 
 [build-system]
 build-backend = "poetry.core.masonry.api"
