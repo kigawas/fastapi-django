@@ -10,11 +10,11 @@ license = "MIT"
 python = "^3.8"
 
 # 3rd party
-aiofiles = "^0.7.0"
 django = "^3.2"
-fastapi = "^0.61.0"
+fastapi = "^0.70.0"
 pydantic = "^1.6.1"
-uvicorn = "^0.11.8"
+uvicorn = "^0.15.0"
+uvloop = {version = "^0.16.0", markers = 'sys_platform != "win32"'}
 whitenoise = "^5.2.0"
 
 [tool.poetry.dev-dependencies]
