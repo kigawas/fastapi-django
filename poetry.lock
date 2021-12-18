@@ -486,7 +486,7 @@ python-versions = ">=3.6"
 
 [[package]]
 name = "uvicorn"
-version = "0.15.0"
+version = "0.16.0"
 description = "The lightning-fast ASGI server."
 category = "main"
 optional = false
@@ -498,7 +498,7 @@ click = ">=7.0"
 h11 = ">=0.8"
 
 [package.extras]
-standard = ["websockets (>=9.1)", "httptools (>=0.2.0,<0.3.0)", "watchgod (>=0.6)", "python-dotenv (>=0.13)", "PyYAML (>=5.1)", "uvloop (>=0.14.0,!=0.15.0,!=0.15.1)", "colorama (>=0.4)"]
+standard = ["httptools (>=0.2.0,<0.4.0)", "watchgod (>=0.6)", "python-dotenv (>=0.13)", "PyYAML (>=5.1)", "websockets (>=9.1)", "websockets (>=10.0)", "uvloop (>=0.14.0,!=0.15.0,!=0.15.1)", "colorama (>=0.4)"]
 
 [[package]]
 name = "uvloop"
@@ -535,7 +535,7 @@ brotli = ["brotli"]
 [metadata]
 lock-version = "1.1"
 python-versions = "^3.8"
-content-hash = "4c738ae2938f333bd13740b1ebec541d7312a6b9ab39fb75d670ed5017c0901b"
+content-hash = "23cc0b3b0d2f428edba8d4543713c848f1ef069303ad704da872c6446ee8b348"
 
 [metadata.files]
 anyio = [
@@ -742,8 +742,8 @@ typing-extensions = [
     {file = "typing_extensions-4.0.1.tar.gz", hash = "sha256:4ca091dea149f945ec56afb48dae714f21e8692ef22a395223bcd328961b6a0e"},
 ]
 uvicorn = [
-    {file = "uvicorn-0.15.0-py3-none-any.whl", hash = "sha256:17f898c64c71a2640514d4089da2689e5db1ce5d4086c2d53699bf99513421c1"},
-    {file = "uvicorn-0.15.0.tar.gz", hash = "sha256:d9a3c0dd1ca86728d3e235182683b4cf94cd53a867c288eaeca80ee781b2caff"},
+    {file = "uvicorn-0.16.0-py3-none-any.whl", hash = "sha256:d8c839231f270adaa6d338d525e2652a0b4a5f4c2430b5c4ef6ae4d11776b0d2"},
+    {file = "uvicorn-0.16.0.tar.gz", hash = "sha256:eacb66afa65e0648fcbce5e746b135d09722231ffffc61883d4fac2b62fbea8d"},
 ]
 uvloop = [
     {file = "uvloop-0.16.0-cp310-cp310-macosx_10_9_universal2.whl", hash = "sha256:6224f1401025b748ffecb7a6e2652b17768f30b1a6a3f7b44660e5b5b690b12d"},
