@@ -10,7 +10,7 @@ license = "MIT"
 python = "^3.8"
 
 # 3rd party
-django = "^3.2"
+django = "^4.0"
 fastapi = "^0.70.1"
 pydantic = "^1.9.0"
 uvicorn = "^0.16.0"
