@@ -18,7 +18,7 @@ uvloop = {version = "^0.16.0", markers = 'sys_platform != "win32"'}
 whitenoise = "^5.2.0"
 
 [tool.poetry.dev-dependencies]
-black = "^21.12b0"
+black = "^22.1"
 django-stubs = {git = "https://github.com/typeddjango/django-stubs.git"}
 flake8 = "^4.0.1"
 ipython = "^8.0.1"
