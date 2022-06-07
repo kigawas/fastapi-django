@@ -15,7 +15,7 @@ fastapi = "^0.78.0"
 pydantic = "^1.9.1"
 uvicorn = "^0.17.6"
 uvloop = {version = "^0.16.0", markers = 'sys_platform != "win32"'}
-whitenoise = "^6.1.0"
+whitenoise = "^6.2.0"
 
 [tool.poetry.dev-dependencies]
 black = "^22.3"
