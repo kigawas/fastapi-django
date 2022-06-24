@@ -136,7 +136,7 @@ bcrypt = ["bcrypt"]
 
 [[package]]
 name = "django-stubs"
-version = "1.11.1"
+version = "1.12.0"
 description = ""
 category = "dev"
 optional = false
@@ -146,17 +146,20 @@ develop = false
 [package.dependencies]
 django = "*"
 django-stubs-ext = ">=0.4.0"
-mypy = ">=0.930,<0.970"
+mypy = ">=0.930"
 tomli = "*"
 types-pytz = "*"
 types-PyYAML = "*"
 typing-extensions = "*"
 
+[package.extras]
+compatible-mypy = ["mypy (>=0.930,<0.970)"]
+
 [package.source]
 type = "git"
 url = "https://github.com/typeddjango/django-stubs.git"
 reference = "master"
-resolved_reference = "42d8e18bf8d35482cdb4935866bd35304a74fc9d"
+resolved_reference = "644052148aec0114daf3d75a18f9bab48057ff17"
 
 [[package]]
 name = "django-stubs-ext"
@@ -548,19 +551,18 @@ python-versions = ">=2"
 
 [[package]]
 name = "uvicorn"
-version = "0.17.6"
+version = "0.18.1"
 description = "The lightning-fast ASGI server."
 category = "main"
 optional = false
 python-versions = ">=3.7"
 
 [package.dependencies]
-asgiref = ">=3.4.0"
 click = ">=7.0"
 h11 = ">=0.8"
 
 [package.extras]
-standard = ["websockets (>=10.0)", "httptools (>=0.4.0)", "watchgod (>=0.6)", "python-dotenv (>=0.13)", "PyYAML (>=5.1)", "uvloop (>=0.14.0,!=0.15.0,!=0.15.1)", "colorama (>=0.4)"]
+standard = ["websockets (>=10.0)", "httptools (>=0.4.0)", "watchfiles (>=0.13)", "python-dotenv (>=0.13)", "PyYAML (>=5.1)", "uvloop (>=0.14.0,!=0.15.0,!=0.15.1)", "colorama (>=0.4)"]
 
 [[package]]
 name = "uvloop"
@@ -597,7 +599,7 @@ brotli = ["brotli"]
 [metadata]
 lock-version = "1.1"
 python-versions = "^3.8"
-content-hash = "1ddf3e55c577eb2321dffb583e7ff61b3586607af86c413bd780aa84bce2cf9f"
+content-hash = "1964d8151b18c3931062d80bfe00ffbaf7a0acaa701ab73cdeb115a23cf6d8e7"
 
 [metadata.files]
 anyio = [
@@ -875,8 +877,8 @@ tzdata = [
     {file = "tzdata-2021.5.tar.gz", hash = "sha256:68dbe41afd01b867894bbdfd54fa03f468cfa4f0086bfb4adcd8de8f24f3ee21"},
 ]
 uvicorn = [
-    {file = "uvicorn-0.17.6-py3-none-any.whl", hash = "sha256:19e2a0e96c9ac5581c01eb1a79a7d2f72bb479691acd2b8921fce48ed5b961a6"},
-    {file = "uvicorn-0.17.6.tar.gz", hash = "sha256:5180f9d059611747d841a4a4c4ab675edf54c8489e97f96d0583ee90ac3bfc23"},
+    {file = "uvicorn-0.18.1-py3-none-any.whl", hash = "sha256:013c4ea0787cc2dc456ef4368e18c01982e6be57903e4d3183218e543eb889b7"},
+    {file = "uvicorn-0.18.1.tar.gz", hash = "sha256:35703e6518105cfe53f16a5a9435db3e2e227d0784f1fd8fbc1214b1fdc108df"},
 ]
 uvloop = [
     {file = "uvloop-0.16.0-cp310-cp310-macosx_10_9_universal2.whl", hash = "sha256:6224f1401025b748ffecb7a6e2652b17768f30b1a6a3f7b44660e5b5b690b12d"},
