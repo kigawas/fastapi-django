@@ -20,7 +20,7 @@ whitenoise = "^6.2.0"
 [tool.poetry.dev-dependencies]
 black = "^22.6"
 django-stubs = {git = "https://github.com/typeddjango/django-stubs.git"}
-flake8 = "^4.0.1"
+flake8 = "^5.0.2"
 ipython = "^8.4.0"
 mypy = "^0.971"
 
