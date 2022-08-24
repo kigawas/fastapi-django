@@ -13,7 +13,7 @@ python = "^3.8"
 django = "^4.1"
 fastapi = "^0.80.0"
 pydantic = "^1.9.2"
-uvicorn = "^0.18.2"
+uvicorn = "^0.18.3"
 uvloop = {version = "^0.16.0", markers = 'sys_platform != "win32"'}
 whitenoise = "^6.2.0"
 
