@@ -111,6 +111,8 @@ USE_TZ = True
 
 STATIC_URL = "/static/"
 STATIC_ROOT = BASE_DIR / "staticfiles"
-STATICFILES_STORAGE = "whitenoise.storage.CompressedManifestStaticFilesStorage"
+# STATICFILES_STORAGE = "whitenoise.storage.CompressedManifestStaticFilesStorage"
 
-MOUNT_DJANGO_APP = False
+# if True, run `./manage.py collectstatic --noinput` before
+# and the STATICFILES_STORAGE above will be unnecessary
+MOUNT_DJANGO_APP = True

@@ -11,18 +11,18 @@ python = "^3.8"
 
 # 3rd party
 django = "^4.1"
-fastapi = "^0.81.0"
+fastapi = "^0.88.0"
 pydantic = "^1.10.1"
-uvicorn = "^0.18.3"
-uvloop = {version = "^0.16.0", markers = 'sys_platform != "win32"'}
+uvicorn = "^0.20.0"
+uvloop = {version = "^0.17.0", markers = 'sys_platform != "win32"'}
 whitenoise = "^6.2.0"
 
 [tool.poetry.dev-dependencies]
-black = "^22.6"
+black = "^22.10"
 django-stubs = {git = "https://github.com/typeddjango/django-stubs.git"}
-flake8 = "^5.0.4"
+flake8 = {version = "^6.0.0", python = "^3.8.1"}
 ipython = "^8.4.0"
-mypy = "^0.971"
+mypy = "^0.991"
 
 [build-system]
 build-backend = "poetry.core.masonry.api"
