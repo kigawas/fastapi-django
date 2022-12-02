@@ -15,14 +15,19 @@ fastapi = "^0.88.0"
 pydantic = "^1.10.1"
 uvicorn = "^0.20.0"
 uvloop = {version = "^0.17.0", markers = 'sys_platform != "win32"'}
+
+# optional
+psycopg2 = "^2.9.5"
+# you don't need whitenoise if you mount the django APP with FastAPI
 whitenoise = "^6.2.0"
 
 [tool.poetry.dev-dependencies]
 black = "^22.10"
-django-stubs = {git = "https://github.com/typeddjango/django-stubs.git"}
 flake8 = {version = "^6.0.0", python = "^3.8.1"}
-ipython = "^8.4.0"
+ipython = "^8.7.0"
 mypy = "^0.991"
+
+django-stubs = {git = "https://github.com/typeddjango/django-stubs.git"}
 
 [build-system]
 build-backend = "poetry.core.masonry.api"
