@@ -136,8 +136,8 @@ bcrypt = ["bcrypt"]
 
 [[package]]
 name = "django-stubs"
-version = "1.13.0"
-description = "Mypy stubs for Django"
+version = "1.13.1"
+description = ""
 category = "dev"
 optional = false
 python-versions = ">=3.7"
@@ -159,7 +159,7 @@ compatible-mypy = ["mypy (>=0.980,<0.990)"]
 type = "git"
 url = "https://github.com/typeddjango/django-stubs.git"
 reference = "HEAD"
-resolved_reference = "796956aec0e6f9b3c92694d1ceccdd2bdc8a6bd5"
+resolved_reference = "57b604e7ee1900ace90737896261d4132c23b4e3"
 
 [[package]]
 name = "django-stubs-ext"
@@ -604,7 +604,7 @@ python-versions = "*"
 
 [[package]]
 name = "whitenoise"
-version = "6.2.0"
+version = "6.3.0"
 description = "Radically simplified static file serving for WSGI applications"
 category = "main"
 optional = false
@@ -616,7 +616,7 @@ brotli = ["Brotli"]
 [metadata]
 lock-version = "1.1"
 python-versions = "^3.8"
-content-hash = "91de29532261d667b5a4adf5a2dc186851a130852e9f88a37e133f77707033f1"
+content-hash = "fcbb08911e1296c1709e028f3916609d2a0f4aec043b2f08dfd6826e309c3c91"
 
 [metadata.files]
 anyio = [
@@ -955,6 +955,6 @@ wcwidth = [
     {file = "wcwidth-0.2.5.tar.gz", hash = "sha256:c4d647b99872929fdb7bdcaa4fbe7f01413ed3d98077df798530e5b04f116c83"},
 ]
 whitenoise = [
-    {file = "whitenoise-6.2.0-py3-none-any.whl", hash = "sha256:8e9c600a5c18bd17655ef668ad55b5edf6c24ce9bdca5bf607649ca4b1e8e2c2"},
-    {file = "whitenoise-6.2.0.tar.gz", hash = "sha256:8fa943c6d4cd9e27673b70c21a07b0aa120873901e099cd46cab40f7cc96d567"},
+    {file = "whitenoise-6.3.0-py3-none-any.whl", hash = "sha256:cf8ecf56d86ba1c734fdb5ef6127312e39e92ad5947fef9033dc9e43ba2777d9"},
+    {file = "whitenoise-6.3.0.tar.gz", hash = "sha256:fe0af31504ab08faa1ec7fc02845432096e40cc1b27e6a7747263d7b30fb51fa"},
 ]
