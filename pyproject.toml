@@ -22,7 +22,7 @@ psycopg2 = "^2.9.5"
 whitenoise = "^6.2.0"
 
 [tool.poetry.dev-dependencies]
-black = "^22.10"
+black = "^23.1"
 flake8 = {version = "^6.0.0", python = "^3.8.1"}
 ipython = "^8.7.0"
 mypy = "^0.991"
