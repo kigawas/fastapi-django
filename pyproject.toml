@@ -19,7 +19,7 @@ uvloop = {version = "^0.17.0", markers = 'sys_platform != "win32"'}
 # optional
 psycopg2 = "^2.9.5"
 # you don't need whitenoise if you mount the django APP with FastAPI
-whitenoise = "^6.2.0"
+whitenoise = "^6.4.0"
 
 [tool.poetry.dev-dependencies]
 black = "^22.10"
