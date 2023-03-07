@@ -25,7 +25,7 @@ whitenoise = "^6.2.0"
 black = "^22.10"
 flake8 = {version = "^6.0.0", python = "^3.8.1"}
 ipython = "^8.7.0"
-mypy = "^0.991"
+mypy = "^1.1"
 
 django-stubs = {git = "https://github.com/typeddjango/django-stubs.git"}
 
