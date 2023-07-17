@@ -3,20 +3,19 @@ from typing import List
 
 from django.db import models
 from pydantic import BaseModel as _BaseModel
+from pydantic import ConfigDict
 
 
 class BaseModel(_BaseModel):
     @classmethod
     def from_orms(cls, instances: List[models.Model]):
-        return [cls.from_orm(inst) for inst in instances]
+        return [cls.model_validate(inst) for inst in instances]
 
 
 class FastQuestion(BaseModel):
     question_text: str
     pub_date: datetime
-
-    class Config:
-        orm_mode = True
+    model_config = ConfigDict(from_attributes=True)
 
 
 class FastQuestions(BaseModel):
@@ -30,9 +29,7 @@ class FastQuestions(BaseModel):
 class FastChoice(BaseModel):
     question: FastQuestion
     choice_text: str
-
-    class Config:
-        orm_mode = True
+    model_config = ConfigDict(from_attributes=True)
 
 
 class FastChoices(BaseModel):

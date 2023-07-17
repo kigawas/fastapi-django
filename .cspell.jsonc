@@ -1,0 +1,23 @@
+{
+  "version": "0.2",
+  "ignorePaths": [".cspell.jsonc"],
+  "dictionaryDefinitions": [],
+  "dictionaries": [],
+  "words": [
+    "asgi",
+    "collectstatic",
+    "fastapi",
+    "fastapp",
+    "mysite",
+    "noinput",
+    "orms",
+    "pycache",
+    "pydantic",
+    "staticfiles",
+    "uvicorn",
+    "venv",
+    "wsgi"
+  ],
+  "ignoreWords": [],
+  "import": []
+}
