@@ -7,7 +7,7 @@ More details are [here](https://kigawas.me/posts/integrate-fastapi-and-django-or
 ## Directory hierarchy
 
 ```bash
-$ tree -L 3 -I '__pycache__|venv|staticfiles' -P '*.py'
+$ tree -L 3 -I '__pycache__|.venv|staticfiles' -P '*.py'
 .
 ├── manage.py
 ├── mysite
