@@ -24,7 +24,7 @@ whitenoise = "^6.2.0"
 [tool.poetry.group.dev.dependencies]
 black = "^23.7"
 django-stubs = {extras = ["compatible-mypy"], version = "^4.2.3"}
-flake8 = {version = "^6.0.0", python = "^3.8.1"}
+flake8 = {version = "^6.1.0", python = "^3.8.1"}
 ipython = "^8.14.0"
 mypy = "^1.4.1"
 
