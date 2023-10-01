@@ -17,7 +17,7 @@ uvicorn = "^0.23.1"
 uvloop = {version = "^0.17.0", markers = 'sys_platform != "win32"'}
 
 # optional
-psycopg2 = "^2.9.5"
+psycopg2 = "^2.9.8"
 # you don't need whitenoise if you mount the django APP with FastAPI
 whitenoise = "^6.2.0"
 
