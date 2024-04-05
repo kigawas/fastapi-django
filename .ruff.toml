@@ -1,0 +1,7 @@
+line-length = 88
+
+[lint]
+ignore = ["E501", "W605", "E203"]
+
+[lint.mccabe]
+max-complexity = 12
