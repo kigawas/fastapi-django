@@ -24,7 +24,7 @@ psycopg2 = "^2.9.5"
 whitenoise = "^6.2.0"
 
 [tool.poetry.group.dev.dependencies]
-django-stubs = {extras = ["compatible-mypy"], version = "^4.2.3"}
+django-stubs = {extras = ["compatible-mypy"], version = "^5.0.2"}
 ipython = "^8.14.0"
 mypy = "^1.7.0"
 ruff = "^0.3.5"
