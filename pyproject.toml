@@ -15,7 +15,7 @@ python = "^3.10"
 django = "^5.0"
 fastapi = "^0.110.1"
 pydantic = "^2.0.3"
-uvicorn = "^0.29.0"
+uvicorn = "^0.30.0"
 uvloop = {version = "^0.19.0", markers = 'sys_platform != "win32"'}
 
 # optional
