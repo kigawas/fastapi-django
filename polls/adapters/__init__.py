@@ -9,7 +9,7 @@ ModelT = TypeVar("ModelT", bound=models.Model)
 
 
 async def retrieve_object(model_class: Type[ModelT], id: int) -> ModelT:
-    instance = await model_class.objects.filter(pk=id).afirst()
+    instance = await model_class.objects.filter(pk=id).afirst()  # type:ignore
     if not instance:
         raise HTTPException(status_code=404, detail="Object not found.")
     return instance
