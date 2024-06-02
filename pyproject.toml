@@ -27,7 +27,7 @@ whitenoise = "^6.2.0"
 django-stubs = {extras = ["compatible-mypy"], version = "^5.0"}
 ipython = "^8.14.0"
 mypy = "^1.10.0"
-ruff = "^0.4.5"
+ruff = "^0.4.7"
 
 [build-system]
 build-backend = "poetry.core.masonry.api"
