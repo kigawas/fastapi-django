@@ -13,7 +13,7 @@ python = "^3.10"
 
 # 3rd party
 django = "^5.0"
-fastapi = "^0.114.2"
+fastapi = "^0.115.0"
 orjson = "^3.10.7"
 pydantic = "^2.8.2"
 uvicorn = "^0.30.4"
