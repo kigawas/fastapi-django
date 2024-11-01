@@ -17,7 +17,7 @@ fastapi = "^0.115.4"
 orjson = "^3.10.7"
 pydantic = "^2.8.2"
 uvicorn = "^0.30.4"
-uvloop = {version = "^0.20.0", markers = 'sys_platform != "win32"'}
+uvloop = {version = "^0.21.0", markers = 'sys_platform != "win32"'}
 
 # optional
 psycopg2-binary = "^2.9.5"
