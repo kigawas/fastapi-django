@@ -27,7 +27,7 @@ whitenoise = "^6.7.0"
 [tool.poetry.group.dev.dependencies]
 django-stubs = {extras = ["compatible-mypy"], version = "^5.0"}
 ipython = "^8.26.0"
-mypy = "^1.11.1"
+mypy = "^1.13.0"
 ruff = "^0.6.5"
 
 [build-system]
