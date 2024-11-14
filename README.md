@@ -46,7 +46,7 @@ $ tree -L 3 -I '__pycache__|.venv|staticfiles' -P '*.py'
 ## Installation
 
 ```bash
-poetry install
+uv sync
 ```
 
 ## Before the first run
@@ -91,7 +91,7 @@ $ curl http://localhost:8000/question/
 MOUNT_DJANGO_APP = True
 ```
 
-Then http://localhost:8000/django/admin
+Then <http://localhost:8000/django/admin>
 
 ## Tools
 
